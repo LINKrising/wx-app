@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/user/user",
+    "pages/main/main",
+    "pages/search/search",
+    "pages/goodsinfo/info"
+  ],
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "green",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "src/img/homeactive.png",
+        "iconPath": "src/img/home.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "src/img/cofactive.png",
+        "iconPath": "src/img/cof.png",
+        "pagePath": "pages/main/main",
+        "text": "业务"
+      },
+      {
+        "selectedIconPath": "src/img/useractive.png",
+        "iconPath": "src/img/user.png",
+        "pagePath": "pages/user/user",
+        "text": "个人"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#13227a",
+    "navigationBarTitleText": "APP",
+    "navigationBarTextStyle": "#fff"
+  }
+}

@@ -1,0 +1,121 @@
+/* pages/user/user.wxss */
+.user-wrapper {
+    position: relative;
+    background: #eee;
+    width: 100%;
+    height: 1000rpx;
+}
+
+.user-site::after{
+    clear:both;content:'';display:block;width:0;height:0;visibility:hidden;
+}
+.user-oder::after{
+    clear:both;content:'';display:block;width:0;height:0;visibility:hidden;
+}
+.useuser-site-wrapper::after{
+    clear:both;content:'';display:block;width:0;height:0;visibility:hidden;
+}
+
+.user-wrapper .user-info-card{
+    display: flex;
+    flex-direction: row;
+    height: 300rpx;
+    width: 100%;
+    background: #13227a;
+    color:#fff;
+}
+.user-wrapper .user-info-card image{
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 64rpx;
+    margin-left: 60rpx;
+}
+.user-wrapper .user-info-card .user-name{
+    display: inline;
+    font-size: 36rpx;
+    margin: 40rpx 40rpx;
+}
+.user-wrapper .user-order{
+    width: 94%;
+    height: 200rpx;
+    background: #fff;
+    position: absolute;
+    top:200rpx;
+    left: 3%;
+
+}
+.btn{
+    width: 200rpx;
+    height: 80rpx;
+    background: #13227a;
+
+}
+.user-oder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.user-oder-title {
+    width: 100%;
+    float: left;
+}
+.user-oder-title .myorder{
+    font-size:28rpx;
+    color:black;
+    font-weight: 600;
+    margin:30rpx 0rpx 0rpx 20rpx;
+
+
+}
+.user-oder-title .allOrder{
+    font-size:24rpx;
+    color:#808080;
+    float: right;
+    margin:10rpx 0rpx 20rpx 0rpx;
+
+}
+.user-oder-title .line{
+    margin: 0 auto;
+    width: 90%;
+    height: 2rpx;
+    background: #eee;
+    margin-top: 30rpx;
+}
+.state-item{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.state-item image{
+    width: 64rpx;
+    height: 64rpx;
+    margin-left: 58rpx;
+}
+.state-item  text{
+    font-size: 24rpx;
+}
+.user-site-wrapper{
+    position: absolute;
+    top:420rpx;
+    width: 100%;
+}
+.user-site{
+    height: 100rpx;
+    background: #fff;
+    line-height: 100rpx;
+    padding-left: 30rpx;
+}
+.user-site .text-right{
+   float: right;
+}
+.user-site:nth-child(2),.user-site:nth-child(4){
+    margin-top: 20rpx;
+}
+.copyright {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}

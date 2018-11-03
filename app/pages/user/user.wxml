@@ -1,0 +1,36 @@
+<view class="user-wrapper">
+    <view class="user-info-card">
+      <button class="btn" open-type="getUserInfo" wx:if="{{!isLogin}}" bindgetuserinfo="handleUser">登录</button>
+      <view wx:else>
+        <image src="{{userImg}}"/>
+        <text class="user-name">{{userName}}</text>
+      </view>
+    </view>
+    <view class="user-order">
+        <view class="user-oder-title">
+          <text class="myorder">我的订单</text>
+          <text class="allOrder">全部订单></text>
+          <view class="line"></view>
+        </view>
+        <view class="user-state">
+          <view class="state-item" wx:for="{{states}}">
+            <image src="{{item.imgSrc}}"/>                
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+    </view>
+    <view class="user-site-wrapper" >
+      <view class="user-site" wx:for="{{tab}}">
+        <text>{{item}}</text>
+        <text class="text-right">></text>
+      </view>       
+      <view class="copyright">
+        <text>link</text>
+      </view>  
+    </view>
+
+      
+
+    
+      
+</view>

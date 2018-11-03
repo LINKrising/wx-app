@@ -1,0 +1,51 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  <view class="search-wrapper" bindtap="changRouter">     
+      <view class="search-input">
+      <icon class="search" type="search" size="12">
+        
+      </icon>
+        
+        <text>请输入搜索内容</text>
+      </view>   
+  </view>
+  
+  <view class="wrapper">
+  
+    <view class="swiper-wrapper" hover-class="none" hover-stop-propagation="false">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicator-color}}">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+          <swiper-item style="width:100%;">
+            <image src="{{item}}" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="navbar">
+      <view wx:for="{{lists}}" wx:key="{{index}}" class="list">
+          <view class="bg">
+            <image src="{{item.imgSrc}}"/>
+            <text>{{item.title}}</text>
+          </view>        
+      </view>
+    </view>
+
+    <view class="intelval"  hover-stop-propagation="false"></view> 
+      <view class="good-lists">
+        <text class="list-title">精选单品</text>
+        <view class="goods-wrapper">
+          <view class="goods" wx:for="{{goods}}" catchtap="goToShop" wx:key="{{index}}" data-id="{{item.title}}">
+            <image class="goods-pic" src="{{item.imgSrc}}"/>
+            <view class="goods-title">
+              {{item.title}}
+            </view>
+            <view class="goods-price">
+              ￥{{item.price}}
+            </view>
+          </view>       
+      </view>
+    </view>
+    </view>
+    
+</view>
